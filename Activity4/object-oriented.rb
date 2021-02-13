@@ -10,7 +10,7 @@ class Course
 	end
 
 	def get_info
-		p "#{@name} will teach #{@professor}"
+		p "#{@professor} will teach #{@name}"
 	end
 
 	def check_units
