@@ -16,12 +16,18 @@ class EngineeringsControllerTest < ActionDispatch::IntegrationTest
     assert_response :redirect
   end
 
+  # new test
+  test "should respond with success when request goes to GET /engineerings/new" do
+    get new_engineering_path
+    assert_response :success
+  end
+
   # create test
-  test "should respond with success when request goes to GET /engineerings/new " do
-    get new_engineering_path, params: { engineering: { subject: "New Subject", 
+  test "should respond with redirect when request goes to POST /engineerings " do
+    post engineerings_path, params: { engineering: { subject: "New Subject", 
                                                        description: "new subject description", 
                                                        units: 3} }
-    assert_response :success
+    assert_response :redirect
   end
 
   # edit test
