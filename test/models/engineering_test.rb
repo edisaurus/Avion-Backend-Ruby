@@ -36,4 +36,5 @@ class EngineeringTest < ActiveSupport::TestCase
     engineering = Engineering.new(subject: "Math", description: "subject description", units: 3)
     assert engineering.save
   end
+  
 end
