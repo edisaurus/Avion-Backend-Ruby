@@ -8,3 +8,4 @@ Ruby on Rails Activity Updates:
 
 * Activity 3: create mini test for controllers
 
+* Activity 4: create new model & nested reource
