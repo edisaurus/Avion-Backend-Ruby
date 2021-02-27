@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
   root "engineerings#index"
-  resources :engineerings
+  resources :engineerings do
+    resources :specializations
+  end
 end
